@@ -19,22 +19,37 @@ Route::get('/', function(){
 
 
 Route::get('/home', function(){
-    return view('layouts.index');
+    return view('index');
 });
 
 Route::get('/about', function(){
-    return view('layouts.about');
+    return view('about');
 });
 
 Route::get('/services', function(){
-    return view('layouts.services');
+    return view('services');
 });
 
 Route::get('/team', function(){
-    return view('layouts.team');
+    return view('team');
 });
 
 
 Route::get('/connect', function(){
-    return view('layouts.connect');
+    return view('connect');
+});
+
+
+//pizzas
+Route::get('/pizzas',function(){
+    $pizzas = [
+        ['type'=>'mangolin',
+              'base'=>'cheese',
+              'price'=>2],
+              ['type'=>'italian',
+              'base'=>'spicy',
+              'price'=>5]
+];
+$name = request('name');
+    return view('pizzas',['pizzas'=>$pizzas,'name' => $name]);
 });

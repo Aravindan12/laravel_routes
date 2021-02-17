@@ -10,7 +10,7 @@
 	</ul>
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img src='app_path()."layouts/img/.png"'>
+			<img src="/img/background.png">
 			<div class="carousel-caption">
 				<h1 class="display-2">Bootstrap</h1>
 				<h3>Complete website layout</h3>
@@ -19,10 +19,10 @@
 			</div>
 		</div>
 		<div class="carousel-item">
-			<img src="layouts.img.background2.png">
+			<img src="/img/background2.png">
 		</div>
 		<div class="carousel-item">
-			<img src="layouts.img.background3.png">
+			<img src="/img/background3.png">
 		</div>
 	</div>
 </div>
